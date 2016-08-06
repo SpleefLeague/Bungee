@@ -1,0 +1,4 @@
+name: SLBungee
+main: com.spleefleague.bungee.Bungee
+version: 1.0
+authors: [JoshK_]
