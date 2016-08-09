@@ -12,14 +12,7 @@ public class BasicReconnectHandler implements ReconnectHandler {
 
     @Override
     public ServerInfo getServer(ProxiedPlayer proxiedPlayer) {
-        ServerInfo preferred = Bungee.getInstance().getProxy().getServers().get("sl1");
-        for (String serverName : Bungee.getInstance().getBalancingServers()) {
-            ServerInfo serverInfo = Bungee.getInstance().getProxy().getServers().get(serverName);
-            if(serverInfo.getPlayers().size() < preferred.getPlayers().size()) {
-                preferred = serverInfo;
-            }
-        }
-        return preferred;
+        return Bungee.getInstance().getBalancingManager().getNext();
     }
 
     @Override

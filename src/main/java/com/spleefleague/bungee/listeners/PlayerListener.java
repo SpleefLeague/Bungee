@@ -1,8 +1,6 @@
 package com.spleefleague.bungee.listeners;
 
 import com.spleefleague.bungee.Bungee;
-import net.md_5.bungee.api.ChatColor;
-import net.md_5.bungee.api.event.LoginEvent;
 import net.md_5.bungee.api.event.PlayerDisconnectEvent;
 import net.md_5.bungee.api.event.PostLoginEvent;
 import net.md_5.bungee.api.plugin.Listener;
